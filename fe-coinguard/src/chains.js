@@ -15,7 +15,7 @@ const MumbaiTestnet = {
 const SepoliaTestnet = {
     hex: '0xaa36a7',
     name: 'Sepolia test network',
-    rpcUrl: 'https://sepolia.infura.io/v3/',
+    rpcUrl: 'https://sepolia.infura.io/v3/4da7363666a14c46a3e69bbac0773c39',
     ticker: "ETH"
 };
 
