@@ -8,6 +8,7 @@ import {
   Tabs,
   Input,
   Button,
+  Switch
 } from "antd";
 import { LogoutOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
@@ -22,6 +23,8 @@ function WalletView({
   seedPhrase,
   setSeedPhrase,
   selectedChain,
+  mode, // Receive mode prop
+  setMode, // Receive setMode function
 }) {
   const navigate = useNavigate();
   const [tokens, setTokens] = useState(null);
@@ -269,6 +272,14 @@ function WalletView({
             {wallet.slice(0, 4)}...{wallet.slice(38)}
           </div>
         </Tooltip>
+        <Switch
+          checked={mode === "incognito"}
+          onChange={(checked) => {
+            setMode(checked ? "incognito" : "classic")
+            console.log(mode)
+          }}
+          
+        />
         <Divider />
         {fetching ? (
           <Spin />

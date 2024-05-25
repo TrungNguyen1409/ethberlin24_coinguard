@@ -1,5 +1,6 @@
 import React from "react";
-import mwallet from "../mwallet.png";
+import coinguardlogo from "../coinguardlogo.png";
+
 import { Button } from "antd";
 import { useNavigate } from "react-router-dom";
 
@@ -13,9 +14,8 @@ function Home() {
   return (
     <>
       <div className="content">
-        <img src={mwallet} alt="logo" className="frontPageLogo" />
-        <h2> Hi ETHBerlin </h2>
-        <h4 className="h4"> Welcome to your Incoginto Wallet</h4>
+        <img src={coinguardlogo} alt="logo" className="frontPageLogo" />
+        
         <Button
           onClick={() => navigate("/yourwallet")}
           className="frontPageButton"

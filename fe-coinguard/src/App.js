@@ -12,9 +12,10 @@ function App() {
   const [wallet, setWallet] = useState(null);
   const [seedPhrase, setSeedPhrase] = useState(null);
   const [selectedChain, setSelectedChain] = useState("0x1");
+  const [mode, setMode] = useState("classic"); // Add mode state
 
   return (
-    <div className="App">
+    <div className={`App ${mode === "incognito" ? "incognito" : ""}`}>
       <header>
         <img src={logo} className="headerLogo" alt="logo" />
         <Select
@@ -56,6 +57,8 @@ function App() {
                 seedPhrase={seedPhrase}
                 setSeedPhrase={setSeedPhrase}
                 selectedChain={selectedChain}
+                mode={mode} // Pass mode state
+                setMode={setMode}
               />
             }
           />

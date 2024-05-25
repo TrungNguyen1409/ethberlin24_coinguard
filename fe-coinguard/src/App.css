@@ -143,3 +143,23 @@ header {
   object-fit: cover;
   border-radius: 20px; /* Increased border radius for a more edgy look */
 }
+
+/* Incognito mode styles */
+.incognito {
+  background-color: purple;
+  color: white;
+}
+
+.incognito .content {
+  background-color: purple;
+}
+
+.incognito .mnemonic {
+  background-color: purple;
+  color: white;
+  border-color: white;
+}
+
+.incognito .walletView {
+  background-color: purple;
+}
