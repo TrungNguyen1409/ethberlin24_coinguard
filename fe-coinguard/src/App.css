@@ -1,3 +1,4 @@
+/* App Styles */
 .App {
   text-align: center;
   width: 350px;
@@ -35,11 +36,11 @@
 h2 {
   font-size: 40px;
   margin-bottom: 5px;
-  color: rgb(46, 46, 46);
+  color: #ff00ff; /* Magenta text */
 }
 
 .h4 {
-  color: rgb(46, 46, 46);
+  color: #ff00ff; /* Magenta text */
   padding-bottom: 50px;
 }
 
@@ -50,7 +51,7 @@ a:visited {
 header {
   width: 100%;
   height: 80px;
-  background-color: #f9f9f9;
+  background-color: #000000; /* Black background */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,9 +80,9 @@ header {
 }
 
 .mnemonic {
-  color: #faad14;
-  background: #fffbe6;
-  border: 1px solid #ffe58f;
+  color: #ffd700; /* Gold text */
+  background: #2c2c2c; /* Dark gray background */
+  border: 1px solid #ffd700; /* Gold border */
   padding: 5px;
   text-align: justify;
   width: 310px;
@@ -116,7 +117,7 @@ header {
 }
 
 .logoutButton:hover {
-  background-color: rgba(0, 0, 0, 0.036);
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
   cursor: pointer;
 }
 
@@ -140,5 +141,5 @@ header {
   height: 240px;
   width: 240px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 20px; /* Increased border radius for a more edgy look */
 }
