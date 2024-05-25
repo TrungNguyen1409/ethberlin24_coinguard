@@ -37,6 +37,10 @@ function App() {
               label: "Avalanche",
               value: "0xa86a",
             },
+            {
+              label: "Sepolia",
+              value: "0xaa36a7",
+            },
           ]}
           className="dropdown"
         ></Select>
