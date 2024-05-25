@@ -1,6 +1,8 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "CoinGuard",
+  "name": "private non-cus wallet",
+  "version": "1.0.0",
+  "description": "Your Fist Crypto Wallet Extension",
   "icons": [
     {
       "src": "favicon.ico",
