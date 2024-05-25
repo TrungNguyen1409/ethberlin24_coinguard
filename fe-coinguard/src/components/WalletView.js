@@ -8,7 +8,7 @@ import {
   Tabs,
   Input,
   Button,
-  Switch
+  Switch,
 } from "antd";
 import { LogoutOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
@@ -149,13 +149,18 @@ function WalletView({
               placeholder="Native tokens you wish to send..."
             />
           </div>
-          <Button
-            style={{ width: "100%", marginTop: "20px", marginBottom: "20px" }}
-            type="primary"
-            onClick={() => sendTransaction(sendToAddress, amountToSend)}
-          >
-            Send Tokens
-          </Button>
+          {mode === "incognito" ? (
+            <Button type="primary">incognito mode</Button>
+          ) : (
+            <Button
+              style={{ width: "100%", marginTop: "20px", marginBottom: "20px" }}
+              type="primary"
+              onClick={() => sendTransaction(sendToAddress, amountToSend)}
+            >
+              Send Tokens
+            </Button>
+          )}
+
           {processing && (
             <>
               <Spin />
@@ -275,10 +280,9 @@ function WalletView({
         <Switch
           checked={mode === "incognito"}
           onChange={(checked) => {
-            setMode(checked ? "incognito" : "classic")
-            console.log(mode)
+            setMode(checked ? "incognito" : "classic");
+            console.log(mode);
           }}
-          
         />
         <Divider />
         {fetching ? (
