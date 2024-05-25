@@ -144,22 +144,16 @@ header {
   border-radius: 20px; /* Increased border radius for a more edgy look */
 }
 
-/* Incognito mode styles */
-.incognito {
-  background-color: purple;
-  color: white;
-}
-
-.incognito .content {
-  background-color: purple;
-}
-
-.incognito .mnemonic {
-  background-color: purple;
-  color: white;
-  border-color: white;
-}
-
 .incognito .walletView {
-  background-color: purple;
+  background-color: purple; /* Light purple background */
+}
+
+.incognito .walletView .ant-list-item-meta-title,
+.incognito .walletView .ant-list-item-meta-description,
+.incognito .walletView .sendRow p,
+.incognito .walletView h3,
+.incognito .walletView h1,
+.incognito .walletView span,
+.incognito .walletView p {
+  color: white; 
 }
