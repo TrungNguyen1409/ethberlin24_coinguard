@@ -14,8 +14,8 @@ function Home() {
     <>
       <div className="content">
         <img src={mwallet} alt="logo" className="frontPageLogo" />
-        <h2> Hey There 👋 </h2>
-        <h4 className="h4"> Welcome to your Web3 Wallet</h4>
+        <h2> Hi ETHBerlin </h2>
+        <h4 className="h4"> Welcome to your Incoginto Wallet</h4>
         <Button
           onClick={() => navigate("/yourwallet")}
           className="frontPageButton"
@@ -31,9 +31,9 @@ function Home() {
           Sign In With Seed Phrase
         </Button>
         <p className="frontPageBottom">
-          Find Alt Coin Gems:{" "}
-          <a href="https://moralismoney.com/" target="_blank" rel="noreferrer">
-            money.moralis.io
+          We are: {" "}
+          <a href="https://www.tum-blockchain.com/" target="_blank" rel="noreferrer">
+            TUM Blockchain Club
           </a>
         </p>
       </div>

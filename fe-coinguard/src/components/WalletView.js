@@ -33,7 +33,6 @@ function WalletView({
   const [processing, setProcessing] = useState(false);
   const [hash, setHash] = useState(null);
 
-
   const items = [
     {
       key: "3",
@@ -68,13 +67,13 @@ function WalletView({
             <>
               <span>You seem to not have any tokens yet</span>
               <p className="frontPageBottom">
-                Find Alt Coin Gems:{" "}
+                We are:{" "}
                 <a
-                  href="https://moralismoney.com/"
+                  href="https://www.tum-blockchain.com/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  money.moralis.io
+                  TUM Blockchain Club
                 </a>
               </p>
             </>
@@ -108,13 +107,13 @@ function WalletView({
             <>
               <span>You seem to not have any NFTs yet</span>
               <p className="frontPageBottom">
-                Find Alt Coin Gems:{" "}
+                We are:{" "}
                 <a
-                  href="https://moralismoney.com/"
+                  href="https://www.tum-blockchain.com/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  money.moralis.io
+                  TUM Blockchain Club
                 </a>
               </p>
             </>
@@ -170,7 +169,6 @@ function WalletView({
   ];
 
   async function sendTransaction(to, amount) {
-
     const chain = CHAINS_CONFIG[selectedChain];
 
     const provider = new ethers.JsonRpcProvider(chain.rpcUrl);
@@ -185,7 +183,7 @@ function WalletView({
     };
 
     setProcessing(true);
-    try{
+    try {
       const transaction = await wallet.sendTransaction(tx);
 
       setHash(transaction.hash);
@@ -201,9 +199,7 @@ function WalletView({
       } else {
         console.log("failed");
       }
-
-
-    }catch(err){
+    } catch (err) {
       setHash(null);
       setProcessing(false);
       setAmountToSend(null);
