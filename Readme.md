@@ -1,3 +1,25 @@
+
+Important address:
+
+ETHTornado address 0x7127b620f7767EA7A8253f0221557400b8e7438d
+
+ETHTornado Remix: 0xfFa94C7012FD0ee32ea108082b959181880BEa81
+creator address: 0xe7728071CAE19747f4c166c31DC071332a99Acc1
+
+Verifier: 0x60dF3e8E31AE20e2A95D34202F5f6896Fe99f6FA
+
+Hasher: 
+0x8667242F1f00bFBdEb495066995B5FA6226e6082
+
+
+merkel_tree level: 16
+1000000000000000000 = 0x0000000000000000000000000000000000000000000000000de0b6b3a7640000
+
+deposit: commitment : 0x000000000000000000000000000000000000000000000000000000000000002a
+
+
+
+
 How to run TornadoCash locally:
 
 You can see example usage in cli.js, it works both in the console and in the browser.
