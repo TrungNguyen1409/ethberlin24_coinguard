@@ -1,7 +1,7 @@
 {
-  "name": "M'Wallet Blueprint",
+  "name": "CoinGuard Extension",
   "version": "1.0.0",
-  "description": "Your First Crypto Wallet Extension",
+  "description": "Maintain complete privacy while harnessing the benefits of cryptos frictionless transactions and custody.",
   "manifest_version": 3,
   "action": {
     "default_popup": "index.html",
