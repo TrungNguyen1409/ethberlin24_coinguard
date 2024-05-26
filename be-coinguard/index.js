@@ -3,6 +3,9 @@ const Moralis = require("moralis").default;
 const app = express();
 const cors = require("cors");
 require("dotenv").config();
+const { deposit } = require('./deposit');
+
+
 const port = 3001;
 
 app.use(cors());
@@ -42,6 +45,16 @@ app.get("/getTokens", async (req, res) => {
 
 
   return res.status(200).json(jsonResponse);
+});
+
+app.post('/deposit', async (req, res) => {
+  const { currency, amount } = req.body;
+  try {
+    const note = await deposit(currency, amount);
+    res.send({ note });
+  } catch (error) {
+    res.status(500).send({ error: error.message });
+  }
 });
 
 Moralis.start({
