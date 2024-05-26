@@ -33,7 +33,8 @@ Catching and storing the notes obtained from the contracts, which allow retrieva
 
 1. Clone the repository.
 2. Install dependencies using `npm install`.
-3. Run the frontend and backend servers.
+3. Run the frontend and backend servers. (follow instructions)
+
 4. Enable incognito mode for enhanced privacy and security.
 
 ## Contributors
