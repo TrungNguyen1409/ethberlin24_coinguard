@@ -17,6 +17,7 @@ import logo from "../noImg.png";
 import axios from "axios";
 import { CHAINS_CONFIG } from "../chains";
 import { ethers } from "ethers";
+import Deposit from "./Deposit";
 
 function WalletView({
   wallet,
@@ -165,7 +166,11 @@ function WalletView({
             />
           </div>
           {mode === "incognito" ? (
-            <Button type="primary">incognito mode</Button>
+            <>
+              <Deposit></Deposit>
+
+            </>
+            
           ) : (
             <Button
               style={{ width: "100%", marginTop: "20px", marginBottom: "20px" }}

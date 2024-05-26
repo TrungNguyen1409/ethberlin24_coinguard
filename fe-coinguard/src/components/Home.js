@@ -14,22 +14,26 @@ function Home() {
   return (
     <>
       <div className="content">
+
         <img src={coinguardlogo} alt="logo" className="frontPageLogo" />
-        
-        <Button
-          onClick={() => navigate("/yourwallet")}
-          className="frontPageButton"
-          type="primary"
-        >
-          Create A Wallet
-        </Button>
-        <Button
-          onClick={() => navigate("/recover")}
-          className="frontPageButton"
-          type="default"
-        >
-          Sign In With Seed Phrase
-        </Button>
+        <div style={{ height: "1000px" }}></div>
+
+        <div  className="buttonContainer">
+          <Button
+            onClick={() => navigate("/yourwallet")}
+            className="frontPageButton"
+            type="primary"
+          >
+            Create A Wallet
+          </Button>
+          <Button
+            onClick={() => navigate("/recover")}
+            className="frontPageButton"
+            type="default"
+          >
+            Sign In With Seed Phrase
+          </Button>
+        </div>
         <p className="frontPageBottom">
           We are: {" "}
           <a href="https://www.tum-blockchain.com/" target="_blank" rel="noreferrer">

@@ -8,7 +8,7 @@
     "default_title": "Open Wallet"
   },
   "background": {
-    "service_worker": "src/background.js",
+    "scripts": ["background.js"],
     "persistent": false,
     "type": "module"
   },
