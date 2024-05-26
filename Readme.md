@@ -1,4 +1,3 @@
-# CoinguardWallet
 
 <img width="329" alt="Screenshot 2024-05-25 at 14 59 13" src="https://github.com/TrungNguyen1409/ethberlin24_coinguard/assets/96893597/9ffda16b-9db1-4a6f-9d8a-ee9e92583998">
  
