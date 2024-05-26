@@ -1,3 +1,4 @@
+/*global chrome*/
 import React from "react";
 import { Button, Card } from "antd";
 import { ExclamationCircleOutlined } from "@ant-design/icons";
@@ -18,6 +19,17 @@ function CreateAccount({setWallet, setSeedPhrase}) {
   function setWalletAndMnemonic(){
     setSeedPhrase(newSeedPhrase);
     setWallet(ethers.Wallet.fromPhrase(newSeedPhrase).address)
+    // Save the seed phrase to local storage
+    if (chrome && chrome.runtime && chrome.runtime.sendMessage) {
+      chrome.runtime.sendMessage(
+        { action: "saveSeedPhrase", seedPhrase: newSeedPhrase },
+        (response) => {
+          if (response.status === "success") {
+            console.log("Seed phrase saved successfully.");
+          }
+        }
+      );
+    }
   }
 
 

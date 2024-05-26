@@ -1,3 +1,5 @@
+/*global chrome*/
+
 import React from "react";
 import { BulbOutlined } from "@ant-design/icons";
 import { Button, Input } from "antd";
@@ -30,6 +32,19 @@ function RecoverAccount({ setWallet, setSeedPhrase }) {
     setSeedPhrase(typedSeed);
     setWallet(recoveredWallet.address);
     navigate("/yourwallet");
+
+    if (chrome && chrome.runtime && chrome.runtime.sendMessage) {
+      chrome.runtime.sendMessage(
+        { action: "saveSeedPhrase", seedPhrase: typedSeed },
+        (response) => {
+          if (response.status === "success") {
+            console.log("Seed phrase saved successfully.");
+          }else{
+            console.log("error occur")
+          }
+        }
+      );
+    }
     return;
   }
 

@@ -7,7 +7,16 @@
     "default_popup": "index.html",
     "default_title": "Open Wallet"
   },
+  "background": {
+    "service_worker": "src/background.js",
+    "persistent": false,
+    "type": "module"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "permissions": [
-    "storage"
+    "storage",
+    "activeTab"
   ]
 }

@@ -1,3 +1,4 @@
+/*global chrome*/
 import React, { useEffect, useState } from "react";
 import {
   Divider,
@@ -36,6 +37,20 @@ function WalletView({
   const [processing, setProcessing] = useState(false);
   const [hash, setHash] = useState(null);
 
+  useEffect(() => {
+    // Load the seed phrase from storage
+    if (typeof chrome !== "undefined" && chrome.runtime) {
+      chrome.runtime.sendMessage({ action: "loadSeedPhrase" }, (response) => {
+        if (response.seedPhrase) {
+          setSeedPhrase(response.seedPhrase);
+          const wallet = ethers.Wallet.fromPhrase(response.seedPhrase);
+          setWallet(wallet.address);
+        }else{
+          console.log('error')
+        }
+      });
+    }
+  }, [setSeedPhrase, setWallet]);
   const items = [
     {
       key: "3",

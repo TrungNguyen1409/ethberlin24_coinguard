@@ -1,3 +1,5 @@
+/*global chrome*/
+
 import "./App.css";
 import { useState } from "react";
 import logo from "./tbc-conference-logo.svg";
