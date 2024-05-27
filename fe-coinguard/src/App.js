@@ -2,7 +2,7 @@
 
 import "./App.css";
 import { useState } from "react";
-import logo from "./tbc-conference-logo.svg";
+import logo from "./logo.svg";
 import { Select } from "antd";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
