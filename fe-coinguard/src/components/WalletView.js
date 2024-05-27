@@ -85,16 +85,7 @@ function WalletView({
           ) : (
             <>
               <span>You seem to not have any tokens yet</span>
-              <p className="frontPageBottom">
-                We are:{" "}
-                <a
-                  href="https://www.tum-blockchain.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  TUM Blockchain Club
-                </a>
-              </p>
+              
             </>
           )}
         </>
@@ -126,14 +117,8 @@ function WalletView({
             <>
               <span>You seem to not have any NFTs yet</span>
               <p className="frontPageBottom">
-                We are:{" "}
-                <a
-                  href="https://www.tum-blockchain.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  TUM Blockchain Club
-                </a>
+                We are: CoinGuard
+                
               </p>
             </>
           )}

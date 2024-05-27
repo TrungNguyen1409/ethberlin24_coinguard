@@ -34,12 +34,7 @@ function Home() {
             Sign In With Seed Phrase
           </Button>
         </div>
-        <p className="frontPageBottom">
-          We are: {" "}
-          <a href="https://www.tum-blockchain.com/" target="_blank" rel="noreferrer">
-            TUM Blockchain Club
-          </a>
-        </p>
+        
       </div>
     </>
   );
