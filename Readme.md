@@ -1,8 +1,11 @@
 
 <img width="329" alt="Screenshot 2024-05-25 at 14 59 13" src="https://github.com/TrungNguyen1409/ethberlin24_coinguard/assets/96893597/9ffda16b-9db1-4a6f-9d8a-ee9e92583998">
- 
 
-## Overview
+
+DISCLAIMER: The project is in rahmen of https://ethberlin.org/manifesto/. Please don't use this in production !
+https://projects.ethberlin.org/teams/936
+
+## Overview:
 
 Coinguard is an Ethereum self-custody wallet with an integrated incognito mode, designed to address the issue of transactions leaking the sender's wallet address. By enabling the incognito feature, users can make transactions that cannot be traced back to their wallet. This helps to ensure privacy and security by preventing recipients from seeing the sender's on-chain activity and net worth simply by copying and pasting their address into a blockchain explorer.
 
